@@ -1,0 +1,180 @@
+.hidden {
+    opacity: 0;
+}
+
+.excavator {
+    cursor: pointer;
+    z-index: 999;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    width: auto;
+    height: 40%;
+}
+
+canvas {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(.9) brightness(.5);
+}
+
+
+body {
+    background-color: #232323;
+}
+
+button {
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    min-width: 700px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.twmap {
+    display: grid;
+    grid-template-columns: 100% 1fr;
+    grid-template-rows: 100% 1fr;
+}
+
+/* Specific mapael css class are below
+         * 'mapael' class is added by plugin
+        */
+
+.mapael .mapTooltip {
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 400px;
+    display: none;
+    color: #232323;
+}
+
+.mapael .map {
+    grid-area: 1 / 1 / 1 / 1;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+
+    background-color: #232323;
+    border: solid #fff;
+    border-width: 2px;
+    border-radius: 8px;
+
+    /* if width < 500, enter mobile mod  */
+    max-width: 900px;
+    max-height: 900px;
+    width: 100%;
+    /* padding-top: 100%; 1:1 Aspect Ratio */
+}
+
+/* For all zoom buttons */
+.mapael .zoomButton {
+    font-family: monospace ;
+    background-color: rgb(124, 124, 124);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    line-break: loose;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    font-weight: lighter;
+    left: 10px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* Reset Zoom button first */
+.mapael .zoomReset {
+    top: 10px;
+}
+
+/* Then Zoom In button */
+.mapael .zoomIn {
+    top: 55px;
+}
+
+/* Then Zoom Out button */
+.mapael .zoomOut {
+    top: 100px;
+}
+
+.mapael .zoomButton:hover {
+    background-color: #b7b7b7;
+}
+
+.caseintro {
+    display: block;
+    /* Hidden by default */
+
+    overflow: hidden;
+    grid-area: 1 / 1 / 1 / 1;
+    /* Stay in place */
+    z-index: 1500;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #fff;
+    opacity: 0.50;
+    border: solid #fff;
+    border-width: 2px;
+    border-radius: 8px;
+
+    min-width: 500px;
+    /* if width < 500, enter mobile mod  */
+    width: 100%;
+    max-width: 900px;
+    min-height: 500px;
+    height: 100%;
+    max-height: 900px;
+}
+
+.caseintro-content {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.caseintro-close {
+    fill: #232323;
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+}
+
+.caseintro-close:hover {
+    background-color: #b7b7b7;
+}
+
+/*.wellcome {
+    z-index: 1000;
+}*/
