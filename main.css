@@ -314,7 +314,8 @@ img {
 
 
 /* bg-image not in use*/
-/* .bg-set_1 {
+
+.bg-set_1 {
     margin-top: 100px;
     position: absolute;
     left: 0;
@@ -351,7 +352,7 @@ img {
     background-size: 50% , 60%;
     background-repeat: no-repeat, no-repeat;
     opacity: 80%, 80%;
-} */
+}
 
 /* other */
 
