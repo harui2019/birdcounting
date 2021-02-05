@@ -173,11 +173,12 @@ h6 {
 }
 
 /* color */
-.bg-primary {
+/* bg-xxxxx has been use in bootstrap */
+.bgc-primary {
     background-color: #e7e7e7;
 }
 
-.bg-secondary {
+.bgc-secondary {
     background-color: #E5E5E5;
 }
 
@@ -261,27 +262,15 @@ nav .menu a:hover {
 
 /* article */
 
-@media (max-width: 1000px) {
-    .article {
-        padding-left: 0%;
-        padding-right: 0%;
-        background-color: gray;
-    }
-
-}
-
 .article {
-    padding-left: 15%;
-    padding-right: 15%;
-    
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 h1 {
-    font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 100px;
-    font-size: 7vw;
+    font-size: 4vw !important;
     line-height: 120px;
     text-align: center;
     position: relative;
@@ -290,10 +279,9 @@ h1 {
 }
 
 h2 {
-    font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 2vw !important;
     line-height: 45px;
     text-align: center;
     position: relative;
@@ -302,18 +290,31 @@ h2 {
 }
 
 p {
-    font-family: 'Noto Sans TC', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
+    font-size: 2vw !important;
     line-height: 1.2;
     position: relative;
 
     background-color: transparent;
 }
 
-/* bg-image */
-.bg-set_1 {
+/* img */
+img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* 
+#image_bird_1 {
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+
+/* bg-image not in use*/
+/* .bg-set_1 {
     margin-top: 100px;
     position: absolute;
     left: 0;
@@ -350,7 +351,7 @@ p {
     background-size: 50% , 60%;
     background-repeat: no-repeat, no-repeat;
     opacity: 80%, 80%;
-}
+} */
 
 /* other */
 
