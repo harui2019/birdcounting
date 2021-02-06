@@ -219,7 +219,8 @@ h6 {
 /* nav settings */
 nav {
     width: 100%;
-    height: 100px;
+    height: 10vh;
+    min-height: 50px;
     border-bottom: 1px solid black;
     top: 0;
     position: fixed;
@@ -301,14 +302,19 @@ nav .menu .drop:hover .menu-inside {
 }
 
 .avoidnav {
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 /* article */
 
 .article {
-    padding-left: 10%;
-    padding-right: 10%;
     font-family: 'Noto Sans TC', sans-serif;
+    height: 90vh;
+}
+
+.v-mid-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 h1 {
@@ -344,7 +350,8 @@ p {
 /* img */
 img {
     position: relative;
-    max-width: 100%;
+    min-width: 200px;
+    width: 100%;
     height: auto;
     top: 50%;
     transform: translateY(-50%);
