@@ -363,15 +363,13 @@ img {
 } */
 
 
-/* bg-image not in use*/
-
+/* bg-image */
 .bg-set_1 {
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 0;
+    top: 10vh;
     width: 100%;
     height: 90vh;
-    z-index: -1;
 }
 
 #bg-image_bird_1 {
@@ -382,6 +380,7 @@ img {
     background-size: 40%;
     background-repeat: no-repeat;
     opacity: 80%;
+
 }
 
 #bg-image_bird_2 {
