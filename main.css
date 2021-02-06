@@ -137,7 +137,7 @@ h6 {
 }
 
 .footer {
-    padding: 4px 0;
+    padding: 0px 0;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -366,12 +366,12 @@ img {
 /* bg-image not in use*/
 
 .bg-set_1 {
-    margin-top: 100px;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 90vh;
+    z-index: -1;
 }
 
 #bg-image_bird_1 {
@@ -391,17 +391,7 @@ img {
     background-position: 80% 85%;
     background-size: 50%;
     background-repeat: no-repeat;
-    opacity: 50%;
-}
-
-.bg-image_1 {
-    background-image: url("bird_1.png"), url("bird_2.png");
-    
-    background-attachment: fixed, fixed;
-    background-position: 10% 20%, 90% 150%;
-    background-size: 50% , 60%;
-    background-repeat: no-repeat, no-repeat;
-    opacity: 80%, 80%;
+    opacity: 60%;
 }
 
 /* other */
