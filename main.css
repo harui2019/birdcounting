@@ -146,15 +146,16 @@ h6 {
 }
 
 #pagename {
+    position: relative;
     top: 20%;
     left: 50%;
+    width: 40%;
     transform: translateX(-50%);
-    width: 200px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 3vw;
     line-height: 90px;
     color: white;
     text-align: left;
@@ -164,14 +165,14 @@ h6 {
 #pageusing {
     position: relative;
     top: 40%;
-    width: 200px;
+    width: 40%;
     left: 50%;
     transform: translateX(-50%);
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.5vw;
     line-height: 60px;
     text-align: center;
 
