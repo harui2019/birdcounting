@@ -386,11 +386,6 @@ p {
 /* img */
 img {
     position: relative;
-    min-width: 200px;
-    width: 100%;
-    height: auto;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #img_bird_1 {
@@ -415,7 +410,55 @@ img {
     opacity: 70%;
 }
 
+#img_bird_3 {
+    width: 100%;
+}
+
+#img_bird_4 {
+    width: 100%;
+}
+
+#bg-bird_3 {
+    position: absolute;
+    width: 80%;
+    left: 50vw;
+    top: 20vh;
+
+    z-index: 1;
+}
+
+#bg-bird_4 {
+    position: absolute;
+    width: 80%;
+    left: 50vw;
+    top: 20vh;
+
+    z-index: 2;
+}
+
+.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px red solid;
+
+    z-index: 2000;
+}
+
+.image2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+
+    z-index: 2000;
+}
+
 /* bg-image */
+.bg-container {
+    z-index: -1;
+}
+
 .bg-set_1 {
     position: fixed;
     left: 0;
