@@ -219,6 +219,10 @@ h6 {
     background-color: #E5E5E5;
 }
 
+.bgc-white {
+    background-color: #FFFFFF;
+}
+
 .color-primary {
     color: #4E525A;
 }
@@ -353,6 +357,77 @@ nav .menu .drop:hover .menu-inside {
     transform: translateY(-50%);
 }
 
+.h-mid-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.model_intro {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.selectbox_1 {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 20vh;
+    width: 90%;
+    height: 50vh;
+
+    background: rgba(231, 231, 231, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+}
+
+.selectbox_1:hover {
+    border: 1px solid #000000;
+
+}
+
+.selectbox_1 img {
+    position: relative;
+    padding: 5%;
+    height: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.selectbox_1 p {
+    position: relative;
+    height: 40%;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+    margin: 0;
+
+    font-family: Scada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px !important;
+    line-height: 12px;
+
+    color: #4E525A;
+}
+
+.selectbox_1 h1 {
+    left: -18%;
+    height: 15%;
+    top: 0;
+    
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw !important;
+    line-height: 66px;
+    /* identical to box height */
+
+    color: rgba(78, 82, 90, 0.85);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 h1 {
     font-style: normal;
     font-size: 4vw !important;
@@ -420,11 +495,12 @@ img {
 
 #bg-bird_3 {
     position: absolute;
-    width: 80%;
-    left: 50vw;
-    top: 20vh;
+    width: 50%;
+    left: -5vw;
+    top: 0vh;
 
-    z-index: 1;
+    z-index: -1;
+    opacity: 80%;
 }
 
 #bg-bird_4 {
@@ -433,7 +509,8 @@ img {
     left: 50vw;
     top: 20vh;
 
-    z-index: 2;
+    z-index: -2;
+    opacity: 50%;
 }
 
 .image1 {
@@ -446,7 +523,7 @@ img {
 }
 
 .image2 {
-    position: absolute;
+    position: relative;
     top: 30px;
     left: 30px;
     border: 1px green solid;
@@ -456,8 +533,9 @@ img {
 
 /* bg-image */
 .bg-container {
-    z-index: -1;
-}
+    z-index: -10;
+    height: 90vh;
+    }
 
 .bg-set_1 {
     position: fixed;
@@ -488,6 +566,27 @@ img {
     opacity: 60%;
 }
 
+    /* bg-set_2 */
+#bg-image_bird_3 {
+    background-image: url("bird_1.png");
+    
+    background-attachment: local;
+    background-position: -5vw -10vh;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+
+}
+
+#bg-image_bird_4 {
+    background-image: url("bird_2.png");
+    
+    background-attachment: fixed;
+    background-position: 50vw 20vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    opacity: 60%;
+}
 /* other */
 
 .air {
