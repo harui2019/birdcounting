@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>template</title>
+    <title>上傳圖片</title>
     <!-- icon, css, font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
@@ -16,18 +16,27 @@
     <nav class="bgc-primary">
         <div class="container">
             <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li><a href="../index.html">HOME</a></li>
+                <!-- 模型介紹 -->
                 <li>
-                    <a href="../index.html">HOME</a>
+                    <a href="../otherpage/model_intro.html">MODEL</a>
                 </li>
+                <!-- 上傳圖片 -->
                 <li>
-                    <a class="active" href="">MODEL</a>
+                    <a class="active" href="../otherpage/upload.html">UPLOAD</a>
+                    <ul class="menu-inside bgc-secondary">
+                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="https://vgg16.herokuapp.com/">UPLOAD</a>
+                <!-- 地圖_停用 -->
+                <li class="drop">
+                    <a href="../otherpage/template.html">MAP</a>
+                    <ul class="menu-inside bgc-secondary">
+                        <li><a>前往示範模板</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="">MAP</a>
-                </li>
+                <!-- 聯繫 -->
                 <li class="drop">
                     <a href="https://www.youtube.com/watch?v=072tU1tamd0">CONTACT</a>
                     <ul class="menu-inside bgc-secondary">
@@ -38,30 +47,35 @@
         </div>
     </nav>
 
-    <div class="bg-container d-none bgc-primary showboxshape_3 avoidnav">
-        <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_1"></div>
-        <div class="bg-set_1 showboxshape_1" alt="" id="bg-image_bird_2"></div>
+    <!-- map div -->
+    <div id="mapdiv" class="avoidnav map-container">
+        css裡有map-container的格式
+        <div class="showboxshape_1" id="whereismap">
+            <img class="h-mid showboxshape_2" src="https://via.placeholder.com/400x300?text=MAP" alt="">
+        </div>
     </div>
 
-    <div class="bg-container bgc-primary showboxshape_3 avoidnav">
-        <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_3"></div>
-        <div class="bg-set_1 showboxshape_1" alt="" id="bg-image_bird_4"></div>
-    </div>
+    <!-- input tag -->
+    <div id="tagdiv" class="color-secondary container showboxshape_3">
+        <!-- first input: position -->
+        <div class="input-group showboxshape_2">
+            <div class="form-floating showboxshape_1">
+                <input type="text" class="form-control" id="floatingInput">
+                <label for="floatingInput">位置</label>
+            </div>
+        </div>
 
-    <div class="container color-primary showboxshape_2">
-        <div class="row article showboxshape_1">
-            <div class="col-12 start-100 showboxshape_1">
-                <div class="v-mid-container showboxshape_3">
-                    <h1 class="mt-60 fw-bold showboxshape_2" id="topic">台灣候鳥棲地介紹</h1>
-                    <h2 class="mb-30 fw-bold showboxshape_2" id="">by 團隊名稱</h2>
-                    <p class="mb-30 fw-bolder showboxshape_2" id="">
-                        根據各國的經驗，社會住宅的價格制定在「可負擔價格」上，其精神就是租金不該超出一般家庭的收入比例(一般為30％)。而回到台灣的社會住宅，背後有一種「財務100%自償」的潛規則，也就是政府不能虧錢，讓入住者負擔所有興建社會住宅的費用。故台灣社會住宅的費用，都是以成本考量為優先，而非住戶可負擔的價格，這也造成了台灣的社會住宅的費用普遍偏高。
-                    </p>
-                </div>
+        <!-- second input: input tag -->
+        <div class="input-group showboxshape_2">
+            <div class="form-floating showboxshape_1">
+                <input type="text" class="form-control" id="floatingInput">
+                <label for="floatingInput">鳥種</label>
             </div>
         </div>
     </div>
-    
+
+
+
     <div class="footer bg-secondary color-muted">
         <div class="container d-none jcsb">
             <div class="footer-logo">居住正義</div>

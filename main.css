@@ -145,6 +145,8 @@ h6 {
     
 }
 
+/* following are specialized */
+
 #pagename {
     position: relative;
     top: 20%;
@@ -209,10 +211,11 @@ h6 {
             justify-content: space-evenly;
 }
 
-/* color */
+
+/* color control*/
 /* bg-xxxxx has been use in bootstrap */
 .bgc-primary {
-    background-color: #e7e7e7;
+    background-color: rgb(236,220,194);
 }
 
 .bgc-secondary {
@@ -239,6 +242,7 @@ h6 {
     color: #93827E;
 }
 
+
 /* quick margin*/
 .mt-60 {
     margin-top: 60px;
@@ -256,7 +260,8 @@ h6 {
     margin-bottom: 60px;
 }
 
-/* nav settings */
+
+/* navbar settings */
 nav {
     width: 100%;
     height: 10vh;
@@ -320,7 +325,6 @@ nav .menu-inside {
 
     border-radius: 5px;
     border: 1px solid #93827E;
-
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
     font-size: 20px;
@@ -341,23 +345,24 @@ nav .menu .drop:hover .menu-inside {
     display: block;
 }
 
+/* main elt. */
+
 .avoidnav {
     margin-top: 10vh;
 }
-/* article */
 
 .article {
     font-family: 'Noto Sans TC', sans-serif;
     height: 90vh;
 }
 
-.v-mid-container {
+.v-mid {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.h-mid-container {
+.h-mid {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -368,6 +373,27 @@ nav .menu .drop:hover .menu-inside {
     padding-right: 10%;
 }
 
+.map-container {
+    width: 100%;
+    height: 50vh;
+    min-height: 400px;
+    border-bottom: 1px solid black;
+    position: relative;
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.input-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group div {
+    width: 60%;
+}
+
+/* selectbox in model_intro */
 .selectbox_1 {
     position: relative;
     margin-left: 5%;
@@ -429,6 +455,8 @@ nav .menu .drop:hover .menu-inside {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* article */
+
 h1 {
     font-style: normal;
     font-size: 4vw !important;
@@ -459,7 +487,8 @@ p {
     background-color: transparent;
 }
 
-/* img */
+
+/* img setting */
 img {
     position: relative;
 }
@@ -532,7 +561,6 @@ img {
     z-index: 2000;
 }
 
-/* bg-image */
 .bg-container {
     z-index: -10;
     height: 90vh;
@@ -588,8 +616,9 @@ img {
     background-repeat: no-repeat;
     opacity: 60%;
 }
-/* other */
 
+
+/* other and widget for editting */
 .air {
     height: 2000px;
 }
