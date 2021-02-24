@@ -17,42 +17,48 @@
         <div class="container">
             <ul class="menu d-flex">
                 <!-- 首頁 -->
-                <li><a href="../index.html">HOME</a></li>
-                <!-- 模型介紹 -->
-                <li>
-                    <a href="../otherpage/model_intro.html">MODEL</a>
+                <li class="drop">
+                    <a class="active" href="../index.html">HOME</a>
                 </li>
                 <!-- 上傳圖片 -->
-                <li>
-                    <a href="../otherpage/upload.html">UPLOAD</a>
-                    <ul class="menu-inside bgc-secondary">
+                <li class="drop">
+                    <a href="./upload.html">UPLOAD</a>
+                    <ul class="drop-menu bgc-secondary">
                         <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
                     </ul>
                 </li>
-                <!-- 地圖_停用 -->
+                <!-- 挑戰說明 -->
                 <li class="drop">
-                    <a href="../otherpage/template.html">MAP</a>
-                    <ul class="menu-inside bgc-secondary">
+                    <a href="./challenge_intro.html">CHALLENGE</a>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a href="./model_intro.html">MODEL</a>
+                </li>
+                <!-- 棲地介紹 -->
+                <li class="drop">
+                    <a href="./habitat_intro.html">HABITAT</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./template.html">CONTACT</a>
+                    <ul class="drop-menu bgc-secondary">
                         <li><a>前往示範模板</a></li>
                     </ul>
                 </li>
-                <!-- 聯繫 -->
-                <li class="drop">
-                    <a href="https://www.youtube.com/watch?v=072tU1tamd0">CONTACT</a>
-                    <ul class="menu-inside bgc-secondary">
-                        <li><a>前往示範模板</a></li>
-                    </ul>
-                </li>
+                <!-- end -->
             </ul>
         </div>
     </nav>
-
-    <div class="bg-container d-none bgc-primary showboxshape_3 avoidnav">
+    <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
+    
+    <!-- background -->
+    <div class="bg-container bgc-primary showboxshape_3">
         <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_1"></div>
         <div class="bg-set_1 showboxshape_1" alt="" id="bg-image_bird_2"></div>
     </div>
 
-    <div class="bg-container bgc-primary showboxshape_3 avoidnav">
+    <div class="bg-container bgc-primary showboxshape_3">
         <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_3"></div>
         <div class="bg-set_1 showboxshape_1" alt="" id="bg-image_bird_4"></div>
     </div>

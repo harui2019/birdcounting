@@ -149,7 +149,10 @@ h6 {
 
 #pagename {
     position: relative;
-    width: 100%;
+    top: 20%;
+    left: 50%;
+    width: 40%;
+    transform: translateX(-50%);
 
     font-family: Roboto;
     font-style: normal;
@@ -261,20 +264,13 @@ h6 {
 /* navbar settings */
 nav {
     width: 100%;
-    height: 5vh;
-    min-height: 40px;
+    height: 10vh;
+    min-height: 50px;
     border-bottom: 1px solid black;
     top: 0;
     position: fixed;
     z-index: 1000;
 }
-
-nav+.navblocker {
-    height: 5vh;
-    min-height: 40px;
-    position: relative;
-    z-index: 0;
-} 
 
 nav .container {
     height: 100%; 
@@ -311,7 +307,7 @@ nav .menu a {
 }
 
 nav .menu a:hover {
-    color: rgb(193, 133, 31);
+    color: #c1851f;
 }
 
 nav .menu .active {
@@ -319,7 +315,7 @@ nav .menu .active {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-nav .drop-menu {
+nav .menu-inside {
     position: absolute;
     display: none;
     top: 100%;
@@ -336,7 +332,7 @@ nav .drop-menu {
     font-weight: 600;
 }
 
-nav .drop-menu li + li {
+nav .menu-inside li + li {
     padding: 16px 0 0;
     border-top: 2px solid #fff;
 }
@@ -345,16 +341,19 @@ nav .menu .drop {
     position: relative;
 }
 
-nav .menu .drop:hover .drop-menu {
+nav .menu .drop:hover .menu-inside {
     display: block;
 }
 
 /* main elt. */
 
+.avoidnav {
+    margin-top: 10vh;
+}
+
 .article {
     font-family: 'Noto Sans TC', sans-serif;
-    max-height: 95vh;
-    height: calc(100vh - 40px);
+    height: 90vh;
 }
 
 .v-mid {
@@ -367,27 +366,6 @@ nav .menu .drop:hover .drop-menu {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-}
-.txt-center {
-    /* Internet Explorer 10 */
-    display:-ms-flexbox;
-    -ms-flex-pack:center;
-    -ms-flex-align:center;
-
-    /* Firefox */
-    display:-moz-box;
-    -moz-box-pack:center;
-    -moz-box-align:center;
-
-    /* Safari, Opera, and Chrome */
-    display:-webkit-box;
-    -webkit-box-pack:center;
-    -webkit-box-align:center;
-
-    /* W3C */
-    display:box;
-    box-pack:center;
-    box-align:center;
 }
 
 .model_intro {
@@ -464,6 +442,7 @@ nav .menu .drop:hover .drop-menu {
     left: -18%;
     height: 15%;
     top: 0;
+    
 
     font-family: Roboto;
     font-style: normal;
@@ -474,41 +453,6 @@ nav .menu .drop:hover .drop-menu {
 
     color: rgba(78, 82, 90, 0.85);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header-menu {
-    padding-left: 0em !important;
-}
-
-.selectbox_2 {
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(231, 231, 231, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    height: 100%;
-
-    cursor: pointer;
-}
-
-.selectbox_2 a {
-    height: 100%;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vw !important;
-
-    color: rgba(78, 82, 90, 0.85);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    text-align: center !important;
-    vertical-align: middle !important;
-}
-
-.selectbox_2 a:hover {
-    color:  rgba(193, 133, 31, 0.85);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
 }
 
 /* article */
@@ -619,18 +563,15 @@ img {
 
 .bg-container {
     z-index: -10;
-    max-height: 95vh;
-    height: calc(100vh - 40px);
-}
+    height: 90vh;
+    }
 
 .bg-set_1 {
     position: fixed;
     left: 0;
+    top: 10vh;
     width: 100%;
-    max-height: 95vh;
-    height: calc(100vh - 40px);
-
-    z-index: 0;
+    height: 90vh;
 }
 
 #bg-image_bird_1 {

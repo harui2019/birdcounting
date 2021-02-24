@@ -17,103 +17,77 @@
         <div class="container">
             <ul class="menu d-flex">
                 <!-- 首頁 -->
-                <li><a class="active" href="../index.html">HOME</a></li>
+                <li class="drop">
+                    <a class="active" href="">HOME</a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a href="./otherpage/challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 地圖或棲地 -->
+                        <li class="drop">
+                            <a href="./otherpage/habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./otherpage/upload.html">UPLOAD</a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
+                    </ul>
+                </li>
                 <!-- 模型介紹 -->
                 <li class="drop">
                     <a href="./otherpage/model_intro.html">MODEL</a>
                 </li>
-                <!-- 上傳圖片 -->
-                <li>
-                    <a href="./otherpage/upload.html">UPLOAD</a>
-                    <ul class="menu-inside bgc-secondary">
-                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
-                    </ul>
-                </li>
-                <!-- 地圖_停用 -->
+                <!-- 地圖 -->
                 <li class="drop">
-                    <a href="./otherpage/template.html">MAP</a>
-                    <ul class="menu-inside bgc-secondary">
+                    <a href="./otherpage/map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./otherpage/template.html">CONTACT</a>
+                    <ul class="drop-menu bgc-secondary">
                         <li><a>前往示範模板</a></li>
                     </ul>
                 </li>
-                <!-- 聯繫 -->
-                <li class="drop">
-                    <a href="https://www.youtube.com/watch?v=072tU1tamd0">CONTACT</a>
-                    <ul class="menu-inside bgc-secondary">
-                        <li><a>前往示範模板</a></li>
-                    </ul>
-                </li>
+                <!-- end -->
             </ul>
         </div>
     </nav>
-
-    <!-- <div class="fixed-bg"></div> -->
-    <div class="bgc-primary container color-primary showboxshape_1 avoidnav">
-        <!-- homepage -->
-        <div class="row article showboxshape_2">
-            <div class="col-6 start-50 showboxshape_1">
-                <div style="padding-bottom: 30vh;" class="v-mid showboxshape_3">
-                    <div id="pagename">網站名</div>
-                    <div id="pageusing">5. 使用頁面</div>
-                </div>
-            </div>
-            <div class="col-6 start-100 showboxshape_1">
-                <div class="v-mid showboxshape_3">
-                    <img class="showboxshape_2" id="img_bird_1" src="./bird_1.png" alt="">
-                    <img class="showboxshape_2" id="img_bird_2" src="./bird_2.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <!-- first row -->
-        <div class="row article showboxshape_2">
-            <div class="col-4 start-50 showboxshape_1">
-                <div class="v-mid showboxshape_3">
-                    <img src="bird_1.png" class="showboxshape_3" alt="" id="img_bird_3"></img>
-                </div>
-            </div>
-            <div class="col-8 start-100 showboxshape_1">
-                <div class="v-mid showboxshape_3">
-                    <h1 class="mt-60 fw-bold showboxshape_2" id="topic">台灣候鳥棲地介紹</h1>
-                    <h2 class="mb-30 fw-bold showboxshape_2" id="">by 團隊名稱</h2>
-                    <p class="mb-30 fw-bolder showboxshape_2" id="">
-                        根據各國的經驗，社會住宅的價格制定在「可負擔價格」上，其精神就是租金不該超出一般家庭的收入比例(一般為30％)。而回到台灣的社會住宅，背後有一種「財務100%自償」的潛規則，也就是政府不能虧錢，讓入住者負擔所有興建社會住宅的費用。故台灣社會住宅的費用，都是以成本考量為優先，而非住戶可負擔的價格，這也造成了台灣的社會住宅的費用普遍偏高。
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- second row -->
-        <div class="row article showboxshapef_2">
-            <div class="col-8 start-50 showboxshape_1">
-                <div class="v-mid showboxshape_3">
-                    <h1 class="mt-60 fw-bold showboxshape_2" id="topic">台灣候鳥棲地介紹</h1>
-                    <h2 class="mb-30 fw-bold showboxshape_2" id="">by 團隊名稱</h2>
-                    <p class="mb-30 fw-bolder showboxshape_2" id="">
-                        根據各國的經驗，社會住宅的價格制定在「可負擔價格」上，其精神就是租金不該超出一般家庭的收入比例(一般為30％)。而回到台灣的社會住宅，背後有一種「財務100%自償」的潛規則，也就是政府不能虧錢，讓入住者負擔所有興建社會住宅的費用。故台灣社會住宅的費用，都是以成本考量為優先，而非住戶可負擔的價格，這也造成了台灣的社會住宅的費用普遍偏高。
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 start-50 showboxshape_1">
-                <div class="v-mid showboxshape_3">
-                    <img src="bird_2.png" class="showboxshape_3" alt="" id="img_bird_4"></img>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="row article showboxshape_2">
-            <p class="article showboxshape_2">
-                5555555
-            </p>
-        </div> -->
-    </div>
+    <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
     
+    <!-- background -->
+    <div class="bg-container bgc-primary showboxshape_3">
+        <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_3"></div>
+        <div class="bg-set_1 showboxshape_1 d-none" alt="" id="bg-image_bird_4"></div>
+
+        <div style="height: 50%;" class="row showboxshape_2">
+            <h1 class="txt-center showboxshape_1" id="pagename">網站名</h1>
+        </div>
+
+        <ul style="height: 50%;" class="header-menu d-flex jcse">
+            <li style="height: 100%;" class="col-4 selectbox_2 showboxshape_3">
+                <a class="h-mid txt-center showboxshape_1" href="./otherpage/upload.html">上傳圖片</a>
+            </li>
+            <li class="col-4 selectbox_2 showboxshape_3">
+                <a class="h-mid txt-center showboxshape_1" href="./otherpage/upload.html">棲地介紹</a>
+            </li>
+            <li class="col-4 selectbox_2 showboxshape_3">
+                <a class="h-mid txt-center showboxshape_1" href="./otherpage/upload.html">挑戰簡介</a>
+            </li>
+        </ul>
+
+    </div>
+
     <div class="footer bg-secondary color-muted">
         <div class="container d-none jcsb">
             <div class="footer-logo">居住正義</div>
             <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
         </div>
     </div>
+
 
 </body>
 
