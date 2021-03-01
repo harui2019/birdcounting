@@ -1,0 +1,149 @@
+/* img setting */
+img {
+    position: relative;
+}
+
+/* img-set1 */
+/* used in challenge_intro */
+#img_bird_1 {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    left: -5vw;
+    transform: translateY(15%);
+
+    z-index: 1;
+    opacity: 100%;
+}
+
+#img_bird_2 {
+    position: relative;
+    top: 0%;
+    left: 5vw;
+    width: 100%;
+    transform: translateY(-30%);
+    
+    z-index: 2;
+    opacity: 70%;
+}
+
+#img_bird_3 {
+    width: 100%;
+}
+
+#img_bird_4 {
+    width: 100%;
+}
+
+/* background */
+
+.bg-container {
+    height: calc(95vh - 40px);
+    max-height: calc(100vh - 40px);
+}
+
+/* bg-set_1 */
+/* checked in template */
+
+.bg-set_1 {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    max-height: 95vh;
+    height: calc(100vh - 40px);
+
+    z-index: 0;
+}
+
+#bg-image_bird_1 {
+    background-image: url("bird_1.png");
+    
+    background-attachment: fixed;
+    background-position: 10% 18%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+
+}
+
+#bg-image_bird_2 {
+    background-image: url("bird_2.png");
+    
+    background-attachment: fixed;
+    background-position: 80% 85%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 60%;
+}
+
+/* bg-set_2 */
+/* used in home page */
+
+#bg-image_bird_3 {
+    background-image: url("bird_1.png");
+    
+    background-attachment: local;
+    background-position: -5vw -10vh;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+
+}
+
+#bg-image_bird_4 {
+    background-image: url("bird_2.png");
+    
+    background-attachment: fixed;
+    background-position: 50vw 20vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    opacity: 60%;
+}
+
+
+#bg-bird_3 {
+    position: absolute;
+    width: 50%;
+    left: -5vw;
+    top: 0vh;
+
+    z-index: -1;
+    opacity: 80%;
+}
+
+#bg-bird_4 {
+    position: absolute;
+    width: 80%;
+    left: 50vw;
+    top: 20vh;
+
+    z-index: -2;
+    opacity: 50%;
+}
+
+.bg-home {
+    background-image: url("bird_2.png");
+
+    background-attachment: fixed;
+    background-position: 50vw 20vh;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    opacity: 60%;
+}
+
+/* other and widget for editting */
+.air {
+    height: 2000px;
+}
+
+.showboxshape_1 {
+    border: 1px solid red !important;
+}
+
+.showboxshape_2 {
+    border: 1px solid blue !important;
+}
+
+.showboxshape_3 {
+    border: 1px solid green !important;
+}

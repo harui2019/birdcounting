@@ -6,10 +6,19 @@
     <!-- icon, css, font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-    <!-- <link rel="stylesheet" href="./scss/all.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="stylesheet" href="../main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- mod import -->
+    <link rel="stylesheet" href="../material-icon.css">
+    <link rel="stylesheet" href="../bg-and-img.css">
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
 </head>
 
 <body class="bgc-primary color-light">
@@ -18,26 +27,40 @@
             <ul class="menu d-flex">
                 <!-- 首頁 -->
                 <li class="drop">
-                    <a class="active" href="../index.html">HOME</a>
+                    <a class="active" href="">HOME
+                        <span class="showboxshape_1 material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a href="./challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
                 </li>
-                <!-- 上傳圖片 -->
+                <!-- 模型介紹 -->
                 <li class="drop">
-                    <a href="./upload.html">UPLOAD</a>
+                    <a href="./model_intro.html">MODEL
+                        <span class="showboxshape_1 material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
                     <ul class="drop-menu bgc-secondary">
                         <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
                     </ul>
                 </li>
-                <!-- 挑戰說明 -->
+                <!-- 上傳圖片 -->
                 <li class="drop">
-                    <a href="./challenge_intro.html">CHALLENGE</a>
+                    <a href="./upload.html">UPLOAD</a>
                 </li>
-                <!-- 模型介紹 -->
+                <!-- 地圖 -->
                 <li class="drop">
-                    <a href="./model_intro.html">MODEL</a>
-                </li>
-                <!-- 棲地介紹 -->
-                <li class="drop">
-                    <a href="./habitat_intro.html">HABITAT</a>
+                    <a href="./map.html">MAP</a>
                 </li>
                 <!-- 聯繫我們 -->
                 <li class="drop">
@@ -77,9 +100,8 @@
         </div>
     </div>
     
-    <div class="footer bg-secondary color-muted">
+    <div class="footer bg-secondary d-none color-muted">
         <div class="container d-none jcsb">
-            <div class="footer-logo">居住正義</div>
             <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
         </div>
     </div>
