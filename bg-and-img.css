@@ -122,13 +122,16 @@ img {
 }
 
 .bg-home {
-    background-image: url("bird_2.png");
+    background-image: url(./image/home_page.jpg);
 
+    background-clip:padding-box ;
     background-attachment: fixed;
-    background-position: 50vw 20vh;
-    background-size: 80%;
+    background-position:top ;
+    background-size: 100%;
     background-repeat: no-repeat;
     opacity: 60%;
+
+    scroll-behavior: smooth;
 }
 
 /* other and widget for editting */
