@@ -266,8 +266,8 @@ h6 {
 
 /* habitat_intro */
 .slide-container {
-    height: calc(95vh - 40px);
-    max-height: calc(100vh - 40px);
+    height: calc(95vh - 2px);
+    max-height: calc(100vh - 50px);
     margin-right: 10vw;
     margin-left: 10vw;
 }
@@ -288,6 +288,66 @@ h6 {
     border-radius: 5px;
     width: auto;
 }
+
+/* challenge page */
+.challenge-nest {
+    width: 100%;
+    height: 95vh;
+    max-height: calc(100vh - 40px);
+    background-image: url(./image/nests-bird.png);
+
+    background-position: center;
+    background-size: 100%;
+    /* this made img can cover all elts. without exception */
+    background-repeat: no-repeat;
+
+    scroll-behavior: smooth;
+}
+
+.challenge-nest #nest-habitat {
+    position: relative;
+    top: calc(14vh - 1.8*(10vw - 18vh));
+    left: -4vw;
+    
+    width: 40%;
+    margin-left: 30%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5vw;
+    line-height: 4vw;
+    text-align: center;
+    text-decoration: none;
+
+    color: rgb(233, 227, 195);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-14deg);
+}
+
+.challenge-nest #nest-model {
+    position: relative;
+    top: calc(45vh);
+    left: 20vw;
+
+    width: 40%;
+    margin-left: 30%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5vw;
+    line-height: 4vw;
+    text-align: center;
+    text-decoration: none;
+
+    color: rgb(233, 227, 195);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(2deg);
+}
+
 
 /* display method */
 * {
@@ -325,11 +385,7 @@ h6 {
 }
 
 .bgc-secondary {
-    background-color: #E5E5E5;
-}
-
-.bgc-white {
-    background-color: #FFFFFF;
+    background-color: rgba(0, 201, 173, 0.1);;
 }
 
 .color-primary {

@@ -3,40 +3,36 @@ img {
     position: relative;
 }
 
-/* img-set1 */
-/* used in challenge_intro */
-#img_bird_1 {
-    position: relative;
-    top: 0%;
+/* used in home-page */
+.home-bg {
+    /* DO NOT use position: absolute; */
     width: 100%;
-    left: -5vw;
-    transform: translateY(15%);
+    height: 100%;
+    background-color: black;
+    background-image: url(./image/home_page.jpg);
 
-    z-index: 1;
-    opacity: 100%;
-}
+    background-position: top;
+    background-size: cover;
+    /* this made img can cover all elts. without exception */
+    background-repeat: no-repeat;
 
-#img_bird_2 {
-    position: relative;
-    top: 0%;
-    left: 5vw;
-    width: 100%;
-    transform: translateY(-30%);
+    scroll-behavior: smooth;
     
-    z-index: 2;
-    opacity: 70%;
 }
 
-#img_bird_3 {
+.home-bg-cover {
+    position: absolute;
     width: 100%;
+    height: 95vh;
+    max-height: calc(100vh - 40px);
+
+    background: rgba(255, 255, 255, 0.2);
 }
 
-#img_bird_4 {
-    width: 100%;
-}
+/* used in challenge_intro */
 
-/* background */
 
+/* template demo setting */
 .bg-container {
     height: calc(95vh - 40px);
     max-height: calc(100vh - 40px);
@@ -77,10 +73,9 @@ img {
 }
 
 /* bg-set_2 */
-/* used in home page */
 
 #bg-image_bird_3 {
-    background-image: url("bird_1.png");
+    background-image: url("./image/bird_1.png");
     
     background-attachment: local;
     background-position: -5vw -10vh;
@@ -91,7 +86,7 @@ img {
 }
 
 #bg-image_bird_4 {
-    background-image: url("bird_2.png");
+    background-image: url("./image/bird_2.png");
     
     background-attachment: fixed;
     background-position: 50vw 20vh;
@@ -119,31 +114,6 @@ img {
 
     z-index: -2;
     opacity: 50%;
-}
-
-.home-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-image: url(./image/home_page.jpg);
-
-    background-attachment: local;
-    background-position: top;
-    background-size: cover;
-    /* this made img can cover all elts. without exception */
-    background-repeat: no-repeat;
-
-    scroll-behavior: smooth;
-    
-}
-
-.home-bg-cover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(255, 255, 255, 0.2);
 }
 
 /* other and widget for editting */
