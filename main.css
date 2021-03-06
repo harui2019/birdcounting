@@ -1,4 +1,4 @@
-/* main element */
+/* main setting */
 html,
 body,
 div,
@@ -168,22 +168,37 @@ h6 {
 /* following are specialized */
 /* home page */
 .home-container {
-    height: calc(95vh - 40px);
+    height: calc(95vh - 2px);
     max-height: calc(100vh - 40px);
 }
 
-#pagename {
+#home-name {
     position: relative;
     width: 100%;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 3vw;
-    line-height: 90px;
-    color: white;
+    font-size: 100px;
+    line-height: 120px;
     text-align: left;
-    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.80);
+
+    color:rgba(255, 255, 255, 1);
+    text-shadow: 0px 6px 4px rgba(78, 82, 90, 0.80);
+}
+
+#home-intro {
+    position: relative;
+    width: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+
+    color:rgba(255, 255, 255, 1);
+    text-shadow: 0px 6px 4px rgba(78, 82, 90, 0.80);
 }
 
 #pageusing {
@@ -203,6 +218,50 @@ h6 {
     color: #FFFFFF;
     background: #A4A3A3;
     border-radius: 20px;
+}
+
+.home-menu {
+    padding-left: 0em !important;
+}
+
+.home-menu-box {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(231, 231, 231, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.home-menu-box + #upload {
+    background: rgba(78, 82, 90, 0.4);
+}
+
+.home-menu-box a {
+    height: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw !important;
+
+    color: rgba(78, 82, 90, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.home-menu-box + #upload a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.home-menu-box a:hover,
+.home-menu-box + #upload a:hover {
+    color:  rgba(193, 133, 31, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
 }
 
 /* habitat_intro */
@@ -280,101 +339,6 @@ h6 {
 
 .color-muted {
     color: #93827E;
-}
-
-/* navbar settings */
-nav {
-    width: 100%;
-    height: 5vh;
-    min-height: 40px;
-
-    border-bottom: 1px solid black;
-    top: 0;
-    position: fixed;
-    z-index: 1000;
-}
-
-.navblocker {
-    width: 100%;
-    height: 5vh;
-    min-height: 40px;
-
-    position: relative;
-    z-index: 0;
-
-    border-bottom: none;
-} 
-
-nav .container {
-    height: 100%; 
-    position: relative;
-}
-
-nav .menu {
-    height: 100%;
-    
-    font-family: Russo One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    /* line-height: 100%; */
-    /* if using percentage, folowing the font height */
-
-    color: #93827E;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    position: absolute;
-    right: 10%;
-}
-
-nav .menu li {
-    margin-left: 30px;
-    height: 100%;
-}
-
-nav .menu a {
-    color: #93827E;
-    text-decoration: none;
-    height: 100%;
-}
-
-nav .menu li :hover {
-    color: rgb(193, 133, 31);
-}
-
-nav .menu .active {
-    color: #c1851f;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-nav .drop-menu {
-    position: absolute;
-    display: none;
-    z-index: 20;
-
-    border: 1px solid #93827E;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    width: auto;
-    padding: 2px 2px 2px 2px;
-
-    font-size: 21px;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 600;
-}
-
-nav .drop-menu li {
-    padding-right: 10px;
-    padding-left: 10px;
-    border-top: 2px solid #fff;
-    margin-left: 0;
-}
-
-nav .menu .drop {
-    position: relative;
-}
-
-nav .menu .drop:hover .drop-menu {
-    display: block;
 }
 
 /* main elt. */
@@ -505,44 +469,9 @@ nav .menu .drop:hover .drop-menu {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-menu {
-    padding-left: 0em !important;
-}
-
-.selectbox_2 {
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(231, 231, 231, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    height: 100%;
-
-    cursor: pointer;
-}
-
-.selectbox_2 a {
-    height: 100%;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vw !important;
-
-    color: rgba(78, 82, 90, 0.85);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    text-align: center !important;
-    vertical-align: middle !important;
-}
-
-.selectbox_2 a:hover {
-    color:  rgba(193, 133, 31, 0.85);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-}
-
 /* article */
 
-h1 {
+/* h1 {
     font-style: normal;
     font-size: 4vw !important;
     line-height: 120px;
@@ -570,4 +499,4 @@ p {
     position: relative;
 
     background-color: transparent;
-}
+} */

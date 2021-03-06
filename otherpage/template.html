@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../material-icon.css">
     <link rel="stylesheet" href="../bg-and-img.css">
-
+    <link rel="stylesheet" href="../navbar.css">
+    
     <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     
@@ -28,7 +29,7 @@
                 <!-- 首頁 -->
                 <li class="drop">
                     <a class="active" href="../index.html">HOME
-                        <span class="showboxshape_1 material-icons md-18">
+                        <span class="active material-icons md-18">
                             keyboard_arrow_down
                         </span>
                     </a>
@@ -46,7 +47,7 @@
                 <!-- 模型介紹 -->
                 <li class="drop">
                     <a href="./model_intro.html">MODEL
-                        <span class="showboxshape_1 material-icons md-18">
+                        <span class="material-icons md-18">
                             keyboard_arrow_down
                         </span>
                     </a>
@@ -65,9 +66,6 @@
                 <!-- 聯繫我們 -->
                 <li class="drop">
                     <a href="./template.html">CONTACT</a>
-                    <ul class="drop-menu bgc-secondary">
-                        <li><a>前往示範模板</a></li>
-                    </ul>
                 </li>
                 <!-- end -->
             </ul>
@@ -75,6 +73,55 @@
     </nav>
     <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
     
+    <nav class="nav-home">
+        <div class="container">
+            <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li class="drop">
+                    <a class="active" href="">HOME
+                        <span class="active material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a href="./otherpage/challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./otherpage/habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a class="" href="./otherpage/model_intro.html">MODEL
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./otherpage/upload.html">UPLOAD</a>
+                </li>
+                <!-- 地圖 -->
+                <li class="drop">
+                    <a href="./otherpage/map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./otherpage/template.html">CONTACT</a>
+                </li>
+                <!-- end -->
+            </ul>
+        </div>
+    </nav>
+
     <!-- background -->
     <div class="bg-container bgc-primary showboxshape_3">
         <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_1"></div>

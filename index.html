@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="material-icon.css">
     <link rel="stylesheet" href="bg-and-img.css">
+    <link rel="stylesheet" href="navbar.css">
 
     <!-- javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -21,8 +22,10 @@
     
 </head>
 
-<body class="bg-home color-light">
-    <nav class="">
+<body class="home-bg color-light">
+    <div class="home-bg-cover"></div>
+
+    <nav class="nav-home">
         <div class="container">
             <ul class="menu d-flex">
                 <!-- 首頁 -->
@@ -65,34 +68,35 @@
                 <!-- 聯繫我們 -->
                 <li class="drop">
                     <a href="./otherpage/template.html">CONTACT</a>
-                    <ul class="drop-menu bgc-secondary">
-                        <li><a>前往示範模板</a></li>
-                    </ul>
                 </li>
                 <!-- end -->
             </ul>
         </div>
     </nav>
-    <nav class="navblocker showboxshape_3">It's navblocker at z-index:0</nav>
+    <nav class="navblocker">It's navblocker at z-index:0</nav>
     
-    <!-- background -->
-    <div class="home-container showboxshape_3">
-        <!-- <div class="bg-set_1 showboxshape_2" alt="" id="bg-image_bird_3"></div>
-        <div class="bg-set_1 showboxshape_1 d-none" alt="" id="bg-image_bird_4"></div> -->
+    <!-- main -->
+    <div class="home-container">
 
-        <div style="height: 50%;" class="row showboxshape_2">
-            <h1 style="margin:0px" class="txt-center showboxshape_1" id="pagename">網站名</h1>
+        <div style="margin:0px; height: 50%;" class="row">
+            <div class="">
+                <h1 style="margin:0px" class="v-mid txt-center" id="home-name">網站名</h1>
+                <h1 style="margin:0px" class="v-mid txt-center" id="home-intro">網站註解網站註解網站註解網站註解</h2>
+            </div>
         </div>
 
-        <ul style="margin:0px; height: 50%;" class="header-menu d-flex jcse">
-            <li style="height: 100%;" class="col-4 selectbox_2 showboxshape_3">
-                <a class="h-mid txt-center showboxshape_1" href="./otherpage/upload.html">上傳圖片</a>
+        <ul style="margin:0px; height: 50%;" class="home-menu d-flex jcse">
+            <!-- HABITAT -->
+            <li id="habitat" class="col-4 home-menu-box">
+                <a class="h-mid txt-center" href="./otherpage/habitat_intro.html">HABITAT</a>
             </li>
-            <li class="col-4 selectbox_2 showboxshape_3">
-                <a class="h-mid txt-center showboxshape_1" href="./otherpage/upload.html">棲地介紹</a>
+            <!-- UPLOAD -->
+            <li id="upload" class="col-4 home-menu-box">
+                <a class="h-mid txt-center" href="./otherpage/upload.html">UPLOAD</a>
             </li>
-            <li class="col-4 selectbox_2 showboxshape_3">
-                <a class="h-mid txt-center showboxshape_1" href="./otherpage/upload.html">挑戰簡介</a>
+            <!-- CHALLENGE -->
+            <li id="challenge" class="col-4 home-menu-box">
+                <a class="h-mid txt-center" href="./otherpage/challenge_intro.html">CHALLENGE</a>
             </li>
         </ul>
 
