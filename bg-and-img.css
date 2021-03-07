@@ -29,10 +29,9 @@ img {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* used in challenge_intro */
-
 
 /* template demo setting */
+/* they are not in using */
 .bg-container {
     height: calc(95vh - 40px);
     max-height: calc(100vh - 40px);

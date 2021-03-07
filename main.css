@@ -357,6 +357,59 @@ h6 {
     max-height: calc(100vh - 40px);
 }
 
+/* model_index, from .home-menu */
+#model-name {
+    position: relative;
+    width: 100%;
+
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    
+    color: rgb(65, 63, 14);
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#white-bird {
+    background-image: url(./image/white-bird-shape.png);
+    background-position: center;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.model-index-box {
+    height: 100%;
+    cursor: pointer;
+}
+
+.model-index-box a {
+    height: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    
+    text-align: center;
+    text-decoration: none;
+    color: rgba(78, 82, 90, 0.8);
+}
+
+.model-index-box a:hover {
+    color: rgb(193, 133, 31);
+}
+
+.model-index-box a svg {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
 /* display method */
 * {
     -webkit-box-sizing: border-box;
@@ -470,82 +523,6 @@ h6 {
     margin-bottom: 60px;
 }
 
-.model_intro {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.input-group {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.input-group div {
-    width: 60%;
-}
-
-/* selectbox in model_intro */
-.selectbox_1 {
-    position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
-    top: 20vh;
-    width: 90%;
-    height: 50vh;
-
-    border: 1px solid rgba(0, 0, 0, 0);
-    background: rgba(231, 231, 231, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 41px;
-}
-
-.selectbox_1:hover {
-    border: 1px solid #000000;
-
-}
-
-.selectbox_1 img {
-    position: relative;
-    padding: 5%;
-    height: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.selectbox_1 p {
-    position: relative;
-    height: 40%;
-    left: 0;
-    width: 100%;
-    padding: 5%;
-    margin: 0;
-
-    font-family: Scada;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px !important;
-    line-height: 12px;
-
-    color: #4E525A;
-}
-
-.selectbox_1 h1 {
-    left: -18%;
-    height: 15%;
-    top: 0;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vw !important;
-    line-height: 66px;
-    /* identical to box height */
-
-    color: rgba(78, 82, 90, 0.85);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 /* article */
 
 /* h1 {
@@ -604,18 +581,18 @@ p {
     
 }
 
-/*model intro*/
+/* model page */
 
 #model_intro {
     font-family: Roboto;
     color: #27292D;
 }
 
-#model_intro h1{
+#model_intro h1 {
     font-family: Russo One;
 }
 
-/*function*/
+/* function */
 
 #step::after{
     /* background-image: url('./image/箭頭.svg');

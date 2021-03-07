@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>模型介紹</title>
+    <!-- icon, css, font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../material-icon.css">
+    <link rel="stylesheet" href="../bg-and-img.css">
+    <link rel="stylesheet" href="../navbar.css">
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="bgc-secondary">
+    <nav class="bgc-primary">
+        <div class="container">
+            <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li class="drop">
+                    <a class="" href="../index.html">HOME
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a href="./challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a class="active" href="./model_index.html">MODEL
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li class="drop">
+                            <a href="./model.html">MODEL</a>
+                        </li>
+                        <li class="drop">
+                            <a href="./function.html">FUNCTION</a>
+                        </li>
+                        <li class="drop">
+                            <a href="./method.html">METHODOLOGY</a>
+                        </li>
+                        <!-- <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li> -->
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./upload.html">UPLOAD</a>
+                </li>
+                <!-- 地圖 -->
+                <li class="drop">
+                    <a href="./map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./contact.html">CONTACT</a>
+                </li>
+                <!-- end -->
+            </ul>
+        </div>
+    </nav>
+    <nav class="navblocker"></nav>
+
+    <div class="home-container">
+
+        <div style="margin:0px; height: 50%;" class="row">
+            <div id="white-bird">
+                <h1 style="margin:0px" class="v-mid txt-center" id="model-name">MODEL</h1>
+            </div>
+        </div>
+
+        <ul style="margin:0px; height: 40%;" class="home-menu d-flex jcse">
+            <!-- METHODOLOGY -->
+            <li id="method" class="col-4 model-index-box">
+                <a class="h-mid txt-center" href="./method.html">
+                    <svg width="108" height="120" viewBox="0 0 81 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.9991 0C27.2491 0 11.9991 14.7 11.0991 33.2L1.49912 46C0.249122 47.65 1.44912 50 3.49912 50H10.9991V65C10.9991 70.5 15.4991 75 20.9991 75H25.9991V90H60.9991V66.6C72.7991 61 80.9991 48.95 80.9991 35C80.9991 15.65 65.3491 0 45.9991 0ZM60.9991 35C60.9991 35.65 60.9491 36.3 60.8991 36.95L65.0491 40.25C65.4491 40.55 65.5491 41.05 65.2991 41.5L61.2991 48.45C61.0491 48.9 60.4991 49.05 60.0991 48.9L55.1491 46.9C54.0991 47.7 52.9991 48.35 51.7991 48.85L50.9991 54.15C50.9491 54.65 50.4991 55 49.9991 55H41.9991C41.4991 55 41.0991 54.65 40.9991 54.15L40.2491 48.85C38.9991 48.35 37.8991 47.7 36.8491 46.9L31.8991 48.9C31.4491 49.05 30.8991 48.9 30.6491 48.45L26.6491 41.5C26.3991 41.1 26.4991 40.55 26.8991 40.25L31.0991 36.95C31.0491 36.3 30.9991 35.65 30.9991 35C30.9991 34.35 31.0991 33.65 31.1991 33.05L26.9491 29.75C26.5491 29.45 26.4491 28.95 26.6991 28.45L30.6991 21.55C30.9491 21.1 31.4491 20.95 31.8991 21.1L36.8991 23.1C37.8991 22.35 39.0491 21.65 40.2491 21.15L40.9991 15.85C41.0991 15.35 41.4991 15 41.9991 15H49.9991C50.4991 15 50.8991 15.35 50.9991 15.85L51.7491 21.15C52.9491 21.65 54.0491 22.3 55.0991 23.1L60.0991 21.1C60.5491 20.95 61.0991 21.1 61.2991 21.55L65.2991 28.45C65.5491 28.9 65.4491 29.45 65.0491 29.75L60.7991 33.05C60.9491 33.65 60.9991 34.3 60.9991 35Z" fill="#F1D333"/>
+                    </svg>
+                    METHODOLOGY
+                </a>
+            </li>
+            <!-- MODEL -->
+            <li id="model" class="col-4 model-index-box">
+                <a class="h-mid txt-center" href="./model.html">
+                    <svg width="120" height="120" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M70 40V0H20V20H0V90H40V70H50V90H90V40H70ZM20 80H10V70H20V80ZM20 60H10V50H20V60ZM20 40H10V30H20V40ZM40 60H30V50H40V60ZM40 40H30V30H40V40ZM40 20H30V10H40V20ZM60 60H50V50H60V60ZM60 40H50V30H60V40ZM60 20H50V10H60V20ZM80 80H70V70H80V80ZM80 60H70V50H80V60Z" fill="#F1D333"/>
+                    </svg>
+                    MODEL
+                </a>
+            </li>
+            <!-- FUNCTION -->
+            <li id="function" class="col-4 model-index-box">
+                <a class="h-mid txt-center" href="./function.html">
+                    <svg width="120" height="120" viewBox="0 0 100 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45.35 51.5C46.8 49.55 49.4 48.7 51.7 49.65C52.55 50 53.3 50.55 53.85 51.3C54.95 52.7 55.1 54.25 54.95 55.55C54.7 57.2 53.7 58.7 52.25 59.5C52.25 59.5 27.9 74.25 26.9 72.95C25.9 71.65 45.35 51.5 45.35 51.5ZM100 43C100 55.5 95 58 92.5 58C91.35 58 90.3 57.5 89.4 56.7C87 73.3 77.6 83.25 62.75 86.65C63.3 88.85 65.15 90.5 67.5 90.5H70.4C71.5 90.5 72.45 91.25 72.8 92.3C73.65 94.9 76.1 97.4 77.9 98.9C79.15 99.95 79.1 101.85 77.75 102.8C76.05 104 73.25 105.25 68.8 105.45C67.9 105.5 67.05 105.1 66.55 104.35C65.9 103.35 65 101.55 65 99.3C65 97.8 65.2 96.45 65.45 95.3C61.55 94.5 58.5 91.4 57.7 87.5C55.25 87.8 52.7 88 50 88C45.6 88 41.5 87.55 37.75 86.75C37.65 87.15 37.5 87.55 37.5 88C37.5 90.75 39.75 93 42.5 93H45.4C46.5 93 47.45 93.75 47.8 94.8C48.65 97.4 51.1 99.9 52.9 101.4C54.15 102.45 54.1 104.35 52.75 105.3C51.05 106.5 48.25 107.75 43.8 107.95C42.9 108 42.05 107.6 41.55 106.85C40.9 105.85 40 104.05 40 101.8C40 100.3 40.2 98.95 40.45 97.8C35.95 96.85 32.5 92.8 32.5 88C32.5 87.1 32.65 86.2 32.9 85.35C20.6 81.05 12.75 71.45 10.6 56.65C9.7 57.5 8.7 58 7.5 58C5 58 0 55.5 0 43C0 31.65 8.5 20.5 15 20.5C17.15 20.5 17.45 22.95 17.5 24.75C23.9 15.85 33.8 9.65 45.25 8.3C46.25 3.5 50.65 0.5 55 0.5V5.5C55 5.5 56.65 3 60 3C63.35 3 65 5.5 65 5.5C62.55 5.5 60.75 7.25 60.2 9.35C69.3 11.75 77.15 17.3 82.5 24.75C82.55 22.95 82.85 20.5 85 20.5C91.5 20.5 100 31.65 100 43ZM15 48C15 52.05 15.5 55.65 16.25 59.05C17.15 55.6 18.55 52.4 20.4 49.45C19.35 47.1 18.7 44.5 18.7 41.75C18.75 31.4 27.15 23 37.5 23C42.3 23 46.7 24.85 50 27.85C53.3 24.85 57.7 23 62.5 23C72.85 23 81.25 31.4 81.25 41.75C81.25 44.5 80.65 47.1 79.55 49.45C81.4 52.4 82.85 55.65 83.75 59.15C84.5 55.75 85 52.1 85 48C85 28.7 69.3 13 50 13C30.7 13 15 28.7 15 48ZM79.9 69.45C79.9 68.95 80 68.5 80 68C80 62.95 78.7 58.25 76.5 54.1C73.05 58 68.1 60.5 62.5 60.5C61.15 60.5 59.8 60.35 58.55 60.05C59.25 58.9 59.7 57.6 59.9 56.2C59.95 55.85 59.95 55.55 60 55.25C60.85 55.4 61.65 55.5 62.5 55.5C70.1 55.5 76.25 49.35 76.25 41.75C76.25 34.15 70.1 28 62.5 28C59.15 28 55.9 29.25 53.35 31.6L50 34.6L46.65 31.6C44.1 29.25 40.85 28 37.5 28C29.9 28 23.75 34.15 23.75 41.75C23.75 48.45 28.55 54.05 34.9 55.25L31.1 59.4C28.1 58.3 25.5 56.45 23.45 54.15C21.3 58.3 20 63 20 68C20 68.4 20.05 68.75 20.05 69.2C25.65 78.3 35.7 83 50 83C64.4 83 74.4 78.45 79.9 69.45ZM70 41.75C70 46.6 66.65 50.5 62.5 50.5C58.35 50.5 55 46.6 55 41.75C55 36.9 58.35 33 62.5 33C66.65 33 70 36.9 70 41.75ZM66.25 37.4C66.25 36.35 65.4 35.5 64.35 35.5C63.3 35.5 62.5 36.35 62.5 37.4C62.5 38.45 63.35 39.3 64.4 39.3C65.45 39.3 66.25 38.4 66.25 37.4ZM45 41.75C45 46.6 41.65 50.5 37.5 50.5C33.35 50.5 30 46.6 30 41.75C30 36.9 33.35 33 37.5 33C41.65 33 45 36.9 45 41.75ZM41.25 37.4C41.25 36.35 40.4 35.5 39.35 35.5C38.3 35.5 37.5 36.35 37.5 37.4C37.5 38.45 38.35 39.3 39.4 39.3C40.45 39.3 41.25 38.4 41.25 37.4Z" fill="#F1D333"/>
+                    </svg>
+                    FUNCTION
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    
+    <div class="footer bg-secondary color-muted">
+        <div class="container d-none jcsb">
+            <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
