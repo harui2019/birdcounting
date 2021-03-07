@@ -348,6 +348,14 @@ h6 {
     transform: rotate(2deg);
 }
 
+/* map */
+
+.map-container {
+    min-width: 1080px;
+    width: 100vw;
+    height: calc(95vh - 2px);
+    max-height: calc(100vh - 40px);
+}
 
 /* display method */
 * {
@@ -446,19 +454,25 @@ h6 {
     box-align:center;
 }
 
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
 .model_intro {
     padding-left: 10%;
     padding-right: 10%;
-}
-
-.map-container {
-    width: 100%;
-    height: 50vh;
-    min-height: 400px;
-    border-bottom: 1px solid black;
-    position: relative;
-    background-color: #FFFFFF;
-    color: #000;
 }
 
 .input-group {
