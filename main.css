@@ -594,3 +594,13 @@ p {
     
 }
 
+/*model intro*/
+
+#model_intro {
+    font-family: Roboto;
+    color: #27292D;
+}
+
+#model_intro h1{
+    font-family: Russo One;
+}
