@@ -591,10 +591,6 @@ p {
     margin: 40px
 }
 #Insitution h1::before{
-    -moz-transform:scaleX(-1);
-    -webkit-transform:scaleX(-1);
-    -o-transform:scaleX(-1);
-    filter:FlipH;
     background-image: url('./image/white bird shape.png');
     background-size: 100px 100px;
     width: 100px;
@@ -617,4 +613,18 @@ p {
 
 #model_intro h1{
     font-family: Russo One;
+}
+
+/*function*/
+
+#step::after{
+    /* background-image: url('./image/箭頭.svg');
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px; */
+    /* display: inline-block; */
+    content: "→";
+    transform: translate(120px,0px);
+    z-index: -500;
+    position: absolute;
 }
