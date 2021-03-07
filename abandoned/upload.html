@@ -2,11 +2,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>挑戰介紹</title>
+    <title>圖片上傳</title>
     <!-- icon, css, font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="../main.css">
@@ -26,21 +25,23 @@
     
 </head>
 
-<body class="bgc-secondary color-light">
+<body class="bgc-primary color-light">
+
+    <!-- normal nav -->
     <nav class="bgc-primary">
         <div class="container">
             <ul class="menu d-flex">
                 <!-- 首頁 -->
                 <li class="drop">
-                    <a class="" href="../index.html">HOME
-                        <span class="material-icons md-18">
+                    <a href="../index.html">HOME
+                        <span class="active material-icons md-18">
                             keyboard_arrow_down
                         </span>
                     </a>
                     <ul class="drop-menu bgc-secondary">
                         <!-- 挑戰說明 -->
                         <li class="drop">
-                            <a class="active" href="./challenge_intro.html">CHALLENGE</a>
+                            <a href="./challenge_intro.html">CHALLENGE</a>
                         </li>
                         <!-- 棲地介紹 -->
                         <li class="drop">
@@ -61,7 +62,7 @@
                 </li>
                 <!-- 上傳圖片 -->
                 <li class="drop">
-                    <a href="./upload.html">UPLOAD</a>
+                    <a class="active" href="./upload.html">UPLOAD</a>
                 </li>
                 <!-- 地圖 -->
                 <li class="drop">
@@ -76,14 +77,36 @@
         </div>
     </nav>
     <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
-
-    <!-- the nests -->
-    <div class="challenge-nest">
-        <a href="./habitat_intro.html" id="nest-habitat">HABITAT</a>
-        <a href="./model_intro.html" id="nest-model">MODEL</a>
+    
+    <!-- map div -->
+    <div id="mapdiv" class="avoidnav map-container">
+        css裡有map-container的格式
+        <div class="showboxshape_1" id="whereismap">
+            <img class="h-mid showboxshape_2" src="https://via.placeholder.com/400x300?text=MAP" alt="">
+        </div>
     </div>
 
-    
+    <!-- input tag -->
+    <div id="tagdiv" class="color-secondary container showboxshape_3">
+        <!-- first input: position -->
+        <div class="input-group showboxshape_2">
+            <div class="form-floating showboxshape_1">
+                <input type="text" class="form-control" id="floatingInput">
+                <label for="floatingInput">位置</label>
+            </div>
+        </div>
+
+        <!-- second input: input tag -->
+        <div class="input-group showboxshape_2">
+            <div class="form-floating showboxshape_1">
+                <input type="text" class="form-control" id="floatingInput">
+                <label for="floatingInput">鳥種</label>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="footer bg-secondary color-muted">
         <div class="container d-none jcsb">
             <div class="footer-logo">居住正義</div>
