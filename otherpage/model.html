@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>挑戰介紹</title>
+    <!-- icon, css, font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../material-icon.css">
+    <link rel="stylesheet" href="../bg-and-img.css">
+    <link rel="stylesheet" href="../navbar.css">
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="bgc-secondary color-light">
+    <nav class="bgc-primary">
+        <div class="container">
+            <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li class="drop">
+                    <a class="" href="../index.html">HOME
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a class="active" href="./challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a href="./model_intro.html">MODEL
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./upload.html">UPLOAD</a>
+                </li>
+                <!-- 地圖 -->
+                <li class="drop">
+                    <a href="./map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./template.html">CONTACT</a>
+                </li>
+                <!-- end -->
+            </ul>
+        </div>
+    </nav>
+    <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
+
+    <div class="container">
+        <h1>HRCenterNet</h1>
+        <h4>Multi-Scale Feature Representations</h4>
+        <img src="./image/"
+        <p>
+            we propose a generalized bird detection model, namely HRCenterNet with high accuracy
+            inspired by HRNet and CenterNet. For feature extraction, the parallelized model is
+            implemented so that the global feature and local feature can be
+            considered together, and high-level and low-level representations can
+            interact with each other under multi-scale fusion. In the final
+            segmentation result, unlike anchor-based models in the past, our model
+            can achieve scale-aware and accurate segmentation. 
+        </p>
+    </div>
+    
+    <div class="footer bg-secondary color-muted">
+        <div class="container d-none jcsb">
+            <div class="footer-logo">居住正義</div>
+            <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

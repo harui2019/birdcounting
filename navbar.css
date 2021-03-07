@@ -1,0 +1,108 @@
+/* navbar settings */
+nav {
+    width: 100%;
+    height: 5vh;
+    min-height: 40px;
+
+    border-bottom: 1px solid black;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navblocker {
+    width: 100%;
+    height: 5vh;
+    min-height: 40px;
+
+    position: relative;
+    z-index: 0;
+
+    border-bottom: none;
+
+    opacity: 0%;
+} 
+
+nav .container {
+    height: 100%; 
+    position: relative;
+}
+
+nav .menu {
+    height: 100%;
+    
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    /* line-height: 100%; */
+    /* if using percentage, folowing the font height */
+
+    color: #93827E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    right: 10%;
+}
+
+nav .menu li {
+    margin-left: 30px;
+    height: 100%;
+}
+
+nav .menu a {
+    color: rgba(73, 71, 55, 0.6);
+    text-decoration: none;
+    height: 100%;
+}
+
+nav .menu li :hover {
+    color: rgb(193, 133, 31);
+}
+
+nav .menu .active {
+    color: #c1851f;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav .drop-menu {
+    position: absolute;
+    display: none;
+    z-index: 20;
+
+    border: 1px solid rgb(147, 130, 126);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.4);
+    width: auto;
+    padding: 2px 2px 2px 2px;
+
+    font-size: 21px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+}
+
+nav .drop-menu li {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 0;
+
+    height: 5vh;
+    min-height: 40px;
+}
+
+nav .menu .drop {
+    position: relative;
+}
+
+nav .menu .drop:hover .drop-menu {
+    display: block;
+}
+
+/* nav art for each page */
+
+.nav-home {
+    background: rgba(233, 227, 195, 0.6);
+    border-bottom: none;
+}

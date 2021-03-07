@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>棲地介紹</title>
+    <!-- icon, css, font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../material-icon.css">
+    <link rel="stylesheet" href="../bg-and-img.css">
+    <link rel="stylesheet" href="../navbar.css">
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="bgc-primary color-light">
+    <nav class="bgc-primary">
+        <div class="container">
+            <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li class="drop">
+                    <a href="../index.html">HOME
+                        <span class="active material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a class="active" href="./challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a href="./model_intro.html">MODEL
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./upload.html">UPLOAD</a>
+                </li>
+                <!-- 地圖 -->
+                <li class="drop">
+                    <a href="./map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./template.html">CONTACT</a>
+                </li>
+                <!-- end -->
+            </ul>
+        </div>
+    </nav>
+    <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
+    
+    <!-- slide -->
+    <div class="slide-container">
+        <div id="carousel-habitat" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-habitat" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-habitat" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-habitat" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-habitat" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel-habitat" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Intro -->
+                <div class="carousel-item active">
+                    <img src="../image/habitat-intro-taiwan-3x2.jpg" class="d-block w-100" alt="...">
+                    <div class="slide-content-bg carousel-caption d-md-block">
+                        <h5>Intro</h5>
+                        <p>Taiwan attracts a large number of migratory birds every year due to its geographical location and suitable habitat. Also, because of the differences in habitat preferences and migration routes of migratory birds, different types of migratory birds can be seen in different environments or locations, and some species are even loyal to some wetlands in Taiwan. Furthermore, as long as the environment is not destroyed and disappeared, they will always appear in the same place every year. If we go there at an appropriate time, we might be able to see them!</p>
+                    </div>
+                </div>
+
+                <!-- Northern Taiwan -->
+                <div class="carousel-item">
+                    <img src="../image/habitat-northern-taiwan.jpg" class="d-block w-100" alt="...">
+                    <div class="slide-content-bg carousel-caption d-md-block">
+                        <h5>Northern Taiwan</h5>
+                        <p>When we mentioned the northern wetland, wetlands along the riversides of Tamsui River are the most representative. The types of wetlands along the Tamsui River are very diverse, such as swamps and mangroves related to crossing, and mangroves surrounded by bamboos. The main types of migratory birds over here in Tamsui riverside wetlands are wild ducks and egrets.</p>
+                    </div>
+                </div>
+
+                <!-- Eastern Taiwan -->
+                <div class="carousel-item">
+                    <img src="../image/habitat-eastern-taiwan.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption slide-content-bg d-md-block">
+                        <h5>Eastern Taiwan</h5>
+                        <p>There are some famous habitats in the east reiogn of Taiwan, and some important wetlands are located at Yilan city, such as Jhu-an Estuary wetland, Lanyang Estuary wetland, Xinnan wetland, etc. The environment consists of large grassy wetlands formed by the estuary delta, sandbanks, abandoned fish farms, ponds, coastal shrubs and so on. The composition of local migratory birds is mainly migratory waterbirds.</p>
+                    </div>
+                </div>
+
+                <!-- Middle Region of Taiwan -->
+                <div class="carousel-item">
+                    <img src="../image/habitat-central-taiwan-3x2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption slide-content-bg d-md-block">
+                        <h5>Middle Region of Taiwan</h5>
+                        <p>There are some famous wetland in the middle region of Taiwan, including Gaomei Wetland, Taichung Harbor Wetland, Dadu Estuary Wetland, etc.</p>    
+                        <p>Wetlands over here are mainly composed of the vast intertidal beaches and riparian tidal beaches, which are very important habitats for waterbirds in Taiwan. The main migratory birds here are sandpipers, herons, and gulls.</p>
+                    </div>
+                </div>
+
+                <!-- South-West Coast of Taiwan -->
+                <div class="carousel-item">
+                    <img src="../image/habitat-swest-taiwan-3x2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption slide-content-bg d-md-block">
+                        <h5>South-West Coast of Taiwan</h5>
+                        <p>Including Hukou Wetland, Aogu Wetland, Beigang Estuary Wetland, Puzi Estuary Wetland, Zengwun Estuary Wetland , Qigu Estuary Wetland and so on. The main migratory birds are waders, but there are also some wild ducks. The species of snipes and gulls that appear are the most in Taiwan.</p>
+                    </div>
+                </div>
+
+                <!-- 麻煩幫我準備新的圖 -->
+                <!-- end -->
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-habitat"  data-bs-slide="prev">
+            <span class="material-icons md-48">
+                arrow_back_ios
+            </span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-habitat"  data-bs-slide="next">
+            <span class="material-icons md-48">
+                arrow_forward_ios
+            </span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+
+    <div class="footer bg-secondary color-muted">
+        <div class="container d-none jcsb">
+            <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

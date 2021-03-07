@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Birders, the birds counter</title>
+    <!-- icon, css, font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="material-icon.css">
+    <link rel="stylesheet" href="bg-and-img.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="home-bg color-light">
+    <nav class="nav-home">
+        <div class="container">
+            <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li class="drop">
+                    <a class="active" href="">HOME
+                        <span class="active material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a href="./otherpage/challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./otherpage/habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a class="" href="./otherpage/model_intro.html">MODEL
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li>
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./otherpage/upload.html">UPLOAD</a>
+                </li>
+                <!-- 地圖 -->
+                <li class="drop">
+                    <a href="./otherpage/map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./otherpage/template.html">CONTACT</a>
+                </li>
+                <!-- end -->
+            </ul>
+        </div>
+    </nav>
+    <nav class="navblocker">It's navblocker at z-index:0</nav>
+    
+    <div class="home-bg-cover"></div>
+    <!-- main -->
+    <div class="home-container">
+
+        <div style="margin:0px; height: 50%;" class="row">
+            <div class="">
+                <h1 style="margin:0px" class="v-mid txt-center" id="home-name">Birders</h1>
+                <h1 style="margin:0px" class="v-mid txt-center" id="home-intro">網站註解網站註解網站註解網站註解</h2>
+            </div>
+        </div>
+
+        <ul style="margin:0px; height: 50%;" class="home-menu d-flex jcse">
+            <!-- HABITAT -->
+            <li id="habitat" class="col-4 home-menu-box">
+                <a class="h-mid txt-center" href="./otherpage/habitat_intro.html">HABITAT</a>
+            </li>
+            <!-- UPLOAD -->
+            <li id="upload" class="col-4 home-menu-box">
+                <a class="h-mid txt-center" href="./otherpage/upload.html">UPLOAD</a>
+            </li>
+            <!-- CHALLENGE -->
+            <li id="challenge" class="col-4 home-menu-box">
+                <a class="h-mid txt-center" href="./otherpage/challenge_intro.html">CHALLENGE</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="footer bg-secondary d-none color-muted">
+        <div class="container d-none jcsb">
+            <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
+        </div>
+    </div>
+
+
+</body>
+</html>
