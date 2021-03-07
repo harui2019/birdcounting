@@ -57,6 +57,38 @@
 
 /* info input */
 /* 這邊注意有修改輸入建議 */
+/* title with bird */
+#upload-title {
+    background: rgb(233, 227, 195);
+    height: 60px;
+}
+
+#upload-title h1 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: inherit;
+    /* identical to box height */
+
+    text-align: left;
+    vertical-align: middle;
+    width: 80%;
+    margin-left: 10%;
+
+    color: rgb(65, 63, 14);
+}
+
+#upload-title img {
+    position: relative;
+    right: 120px;
+    top: -50px;
+    width: 100px;
+    height: 123px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* accordion */
 #collapseOne .card-body .input-group span input {
     border: 3px solid rgba(65, 63, 14, 0.6);
     box-sizing: border-box;
