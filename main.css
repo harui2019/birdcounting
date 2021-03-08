@@ -604,7 +604,7 @@ p {
     margin: 40px
 }
 #Insitution h1::before{
-    background-image: url('./image/white bird shape.png');
+    background-image: url('./image/white-bird-shape.png');
     background-size: 100px 100px;
     width: 100px;
     height: 100px;
@@ -631,13 +631,64 @@ p {
 /* function */
 
 #step::after{
-    /* background-image: url('./image/箭頭.svg');
-    background-size: 100px 100px;
-    width: 100px;
-    height: 100px; */
-    /* display: inline-block; */
     content: "→";
     transform: translate(120px,0px);
     z-index: -500;
     position: absolute;
 }
+
+
+
+
+#counting {
+    color: #4E525A;
+    font-family: Russo One;
+    font-size: 36px;
+    text-align: center;
+    display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+
+#loading-bird{
+display:flex;
+  align-items:center;
+  justify-content:center;
+  width:600px;
+  height:600px;
+  background-image:url('./image/white-bird-shape.png');
+background-size: 300px 300px;
+background-repeat: no-repeat;
+background-position:46.5% 58%;
+}
+
+#result_title{
+    color: #4E525A;
+    font-family: Russo One;
+    font-size: 36px;
+    text-align: center;
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  height:60px;
+  width: 450px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(236,220,194);
+
+}
+
+#counting_result{
+    color: #4E525A;
+    font-family: Russo One;
+    font-size: 36px;
+    text-align: center;
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  top:180px;
+
+}
+
