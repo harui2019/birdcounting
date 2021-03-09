@@ -97,6 +97,10 @@
     width: 150%;
 }
 
+#collapseOne .card-body .input-group span .tt-hint {
+    height: 42px;
+}
+
 #collapseOne .card-body .input-group span .tt-menu {
     width: 100%;
 }
