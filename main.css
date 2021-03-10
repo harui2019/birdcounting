@@ -178,30 +178,45 @@ h6 {
 #home-name {
     position: relative;
     width: 100%;
+    margin-top: 10vh;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 100px;
-    line-height: 120px;
+    font-size: 8vw;
+    line-height: 8vw;
     text-align: left;
 
     color:rgba(255, 255, 255, 1);
     text-shadow: 0px 6px 4px rgba(78, 82, 90, 0.80);
+
+    animation-name: home-name-showup;
+    animation-duration: 1.5s;
+} @keyframes home-name-showup {
+    0%   {opacity: 0%;}
+    100% {opacity: 100%;}
 }
 
 #home-intro {
     position: relative;
     width: 100%;
+    padding: 50px 10% 0 10%;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 1.8vw;
+    line-height: 2.5vw;
 
     color:rgba(255, 255, 255, 1);
     text-shadow: 0px 6px 4px rgba(78, 82, 90, 0.80);
+
+    animation-name: home-intro-showup;
+    animation-duration: 2.5s;
+} @keyframes home-intro-showup {
+    0%   {opacity: 0%;}
+    50%   {opacity: 0%;}
+    100% {opacity: 100%;}
 }
 
 #pageusing {
@@ -229,29 +244,26 @@ h6 {
 
 .home-menu #habitat {
     position: relative;
-    animation-name: example1;
+    animation-name: habitat-showup;
     animation-duration: 1s;
-}
-@keyframes example1 {
+} @keyframes habitat-showup {
     0%   {left:0px; top:100%;}
     100% {left:0px; top:0px;}
 }
 .home-menu #upload {
     position: relative;
-    animation-name: example2;
+    animation-name: upload-showup;
     animation-duration: 1.5s;
-}
-@keyframes example2 {
+} @keyframes upload-showup {
     0%   {left:0px; top:100%;}
     33%  {left:0px; top:100%;}
     100% {left:0px; top:0px;}
 }
 .home-menu #challenge {
     position: relative;
-    animation-name: example3;
+    animation-name: challenge-showup;
     animation-duration: 2s;
-}
-@keyframes example3 {
+} @keyframes challenge-showup {
     0%   {left:0px; top:100%;}
     50%  {left:0px; top:100%;}
     100% {left:0px; top:0px;}
@@ -543,21 +555,18 @@ h6 {
     box-align:center;
 }
 
-.mt-60 {
-    margin-top: 60px;
-}
-
-.mt-30 {
-    margin-top: 30px;
-}
-
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-.mb-60 {
-    margin-bottom: 60px;
-}
+.mt-60 { margin-top: 60px;}
+.mt-50 { margin-top: 50px;}
+.mt-40 { margin-top: 40px;}
+.mt-30 { margin-top: 30px;}
+.mt-20 { margin-top: 20px;}
+.mt-10 { margin-top: 10px;}
+.mb-60 { margin-bottom: 60px;}
+.mb-50 { margin-bottom: 50px;}
+.mb-40 { margin-bottom: 40px;}
+.mb-30 { margin-bottom: 30px;}
+.mb-20 { margin-bottom: 20px;}
+.mb-10 { margin-bottom: 10px;}
 
 /* article */
 
