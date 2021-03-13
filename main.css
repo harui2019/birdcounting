@@ -336,6 +336,16 @@ h6 {
     width: auto;
 }
 
+.slide-content-bg:hover {
+    background: rgba(0, 0, 0);
+
+    animation-duration: 1s;
+    animation-name: blacken;
+} @keyframes blacken {
+    0%   {background-color: rgba(0, 0, 0, 0.45);}
+    100% {background-color: rgba(0, 0, 0, 1);}
+}
+
 /* challenge page */
 .challenge-nest {
     width: 100%;
