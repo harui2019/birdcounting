@@ -331,9 +331,14 @@ h6 {
 
 .slide-content-bg {
     background: rgba(0, 0, 0, 0.45);
-    padding: 5px;
+    padding: 5px 50px 5px 50px;
     border-radius: 5px;
-    width: auto;
+
+    animation-duration: 1s;
+    animation-name: unblacken;
+} @keyframes unblacken {
+    0%   {background-color: rgba(0, 0, 0, 1);}
+    100% {background-color: rgba(0, 0, 0, 0.45);}
 }
 
 .slide-content-bg:hover {
