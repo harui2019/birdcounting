@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>template</title>
+    <!-- icon, css, font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="icon" href="../image/white-bird-shape.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../material-icon.css">
+    <link rel="stylesheet" href="../bg-and-img.css">
+    <link rel="stylesheet" href="../navbar.css">
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+</head>
+
+<body class="bgc-secondary color-primary">
+    <nav class="bgc-primary">
+        <div class="container">
+            <ul class="menu d-flex">
+                <!-- 首頁 -->
+                <li class="drop">
+                    <a href="../index.html">HOME
+                        <span class="active material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <!-- 挑戰說明 -->
+                        <li class="drop">
+                            <a class="active" href="./challenge_intro.html">CHALLENGE</a>
+                        </li>
+                        <!-- 棲地介紹 -->
+                        <li class="drop">
+                            <a href="./habitat_intro.html">HABITAT</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 模型介紹 -->
+                <li class="drop">
+                    <a href="./model_index.html">MODEL
+                        <span class="material-icons md-18">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="drop-menu bgc-secondary">
+                        <li class="drop">
+                            <a href="./model.html">HRCenterNet</a>
+                        </li>
+                        <li class="drop">
+                            <a href="./function.html">FUNCTION</a>
+                        </li>
+                        <li class="drop">
+                            <a href="./method.html">METHODOLOGY</a>
+                        </li>
+                        <!-- <li><a href="https://vgg16.herokuapp.com/">前往上傳</a></li> -->
+                    </ul>
+                </li>
+                <!-- 上傳圖片 -->
+                <li class="drop">
+                    <a href="./upload.html">UPLOAD</a>
+                </li>
+                <!-- 地圖 -->
+                <li class="drop">
+                    <a href="./map.html">MAP</a>
+                </li>
+                <!-- 聯繫我們 -->
+                <li class="drop">
+                    <a href="./contact.html">CONTACT</a>
+                </li>
+                <!-- end -->
+            </ul>
+        </div>
+    </nav>
+    <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
+
+    <!-- Issue -->
+    <section class="motiva-container">
+        <div style="margin:0px; height: 100%;" class="v-mid row">
+            <div class="col-8 v-center">
+                <h1 class="txt-center" style="height: 10%; margin-top: 10%;" id="home-name-2" data-aos="zoom-out-right">
+                    Motivation
+                </h1>
+                <p class="txt-center" style="height: 30%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;At certain times of the year, large flocks of migratory birds will migrate 
+                    long distances to find their familiar habitats, and spend the summer and winter there. 
+                    However, the development and destruction of habitats, such as wetlands, intertidal zones, swamps, etc., 
+                    and even recent climate changes may make migratory birds unable to find the ideal habitat they were once familiar with, 
+                    which make the process of migration become a thrilling journey.
+                </p>
+                <p class="txt-center" style="height: 20%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;Therefore, we hope to build a set of models through deep learning, 
+                    and by inputting pictures, we can accurately calculate the number of 
+                    migratory birds inside, and then be able to monitor changes in the ecological environment.
+                </p>
+            </div>
+
+            <div class="col-4 txt-center v-center" data-aos="zoom-out-left">
+                <img style="width: 100%;" src="../image/issue-1.jpg" alt=""  data-aos="zoom-out-left">
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Process -->
+    <section class="motiva-container">
+        <div style="margin:0px; height: 100%;" class="v-mid row">
+            <div class="col-4 txt-center v-center" data-aos="zoom-out-left">
+                <img style="width: 100%;" src="../image/chosen one.jpg" alt=""  data-aos="zoom-out-left">
+            </div>
+
+            <div class="col-8 v-center">
+                <h1 class="txt-center" style="height: 10%; margin-top: 15%;" id="home-name-2" data-aos="zoom-out-right">
+                    Research Process
+                </h1>
+                <p class="txt-center" style="height: 10%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;Because the data is not easy to obtain, 
+                    there is no dataset to train the model, therefore we labeled the dataset manually.
+                </p>
+                <p class="txt-center" style="height: 10%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;Although the model perform well on generating the heat map, 
+                    but the number of birds the model predicted is still not that accurate.                    
+                </p>
+                <h1 class="txt-center" style="height: 10%;" id="home-name-2" data-aos="zoom-out-right">
+                    Issue
+                </h1>
+                <p class="txt-center" style="height: 10%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;We are studying in new approach, which is not manual, 
+                    to generate the ground truth of training data, 
+                    which may bring us more training data.
+                </p>
+                <p class="txt-center" style="height: 10%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;The accuracy of the model need to be improved.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

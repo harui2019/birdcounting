@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>挑戰介紹</title>
+    <title>template</title>
     <!-- icon, css, font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
@@ -17,25 +17,22 @@
     <link rel="stylesheet" href="../navbar.css">
 
     <!-- javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     
 </head>
 
-<body class="bgc-secondary color-light">
+<body class="bgc-secondary color-primary">
     <nav class="bgc-primary">
         <div class="container">
             <ul class="menu d-flex">
                 <!-- 首頁 -->
                 <li class="drop">
-                    <a class="" href="../index.html">HOME
-                        <span class="material-icons md-18 active">
+                    <a href="../index.html">HOME
+                        <span class="active material-icons md-18">
                             keyboard_arrow_down
                         </span>
                     </a>
@@ -88,18 +85,38 @@
     </nav>
     <nav class="navblocker showboxshape_3 bgc-primary">It's navblocker at z-index:0</nav>
 
-    <!-- the nests -->
-    <div class="challenge-nest">
-        <a href="./challenge_motiva.html" id="nest-motiva">Motivation</a>
-        <a href="./challenge_habitat.html" id="nest-habitat">Habitat</a>
-    </div>
+    <!-- About Habitat -->
+    <section class="motiva-container">
+        <div style="margin:0px; height: 100%;" class="v-mid row">
+            <div class="col-6 v-center">
+                <h1 class="txt-center" style="height: 10%; margin-top: 30%;" id="home-name-2" data-aos="zoom-out-right">
+                    About Habitat
+                </h1>
+                <p class="txt-center" style="height: 30%;" id="issue-content-1" data-aos="zoom-out-right">
+                    &emsp;&emsp;Taiwan attracts a large number of migratory birds every year due to 
+                    its geographical location and suitable habitat. 
+                    Also, because of the differences in habitat preferences and migration routes of migratory birds, 
+                    different types of migratory birds can be seen in different environments or locations, 
+                    and some species are even loyal to some wetlands in Taiwan. 
+                    Furthermore, as long as the environment is not destroyed and disappeared, 
+                    they will always appear in the same place every year. 
+                    If we go there at an appropriate time, we might be able to see them!
+                </p>
+            </div>
 
-    
+            <div class="col-6 txt-center v-center" data-aos="zoom-out-left">
+                <img style="width: 100%;" src="../image/habitat-intro-taiwan-3x2.jpg" alt=""  data-aos="zoom-out-left">
+            </div>
+        </div>
+    </section>
+
+        
     <div class="footer bg-secondary color-muted">
         <div class="container d-none jcsb">
             <div class="footer-copyright">@copyright-NCCU DSC Group of Web</div>
         </div>
     </div>
+
 
 </body>
 

@@ -366,9 +366,9 @@ h6 {
     scroll-behavior: smooth;
 }
 
-.challenge-nest #nest-habitat {
+.challenge-nest #nest-motiva {
     position: relative;
-    top: calc(14vh - 1.8*(10vw - 18vh));
+    top: calc(13vh - 1.8*(10vw - 18vh));
     left: -4vw;
     
     width: 40%;
@@ -388,7 +388,7 @@ h6 {
     transform: rotate(-14deg);
 }
 
-.challenge-nest #nest-model {
+.challenge-nest #nest-habitat {
     position: relative;
     top: calc(45vh);
     left: 20vw;
@@ -471,6 +471,51 @@ h6 {
     width: 10em;
     top: 0;
     margin-bottom: 10%;
+}
+/* issue */
+.motiva-container {
+    margin: 0 5% 0 5%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#issue-content-1 {
+    position: relative;
+    width: 100%;
+    padding: 0 10% 0 10%;
+    vertical-align: middle;
+
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: min(calc(2.5vh), 25px);
+    line-height: min(calc(3vh), 30px);
+
+    color: black;
+
+}
+
+section {
+    /* height: min(calc((95vh - 2px)), calc((100vh - 40px))); */
+    height: calc((95vh));
+    max-height: calc((100vh - 40px));
+
+    scroll-snap-align: end; /* beauty but dangerous */
+    scroll-snap-stop: always;
+}
+
+#home-name-2 {
+    position: relative;
+    width: 100%;
+
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: 900;
+    font-size: min(6vh, 60px);
+    line-height: min(6vh, 60px);
+    text-align: left;
+
+    color: black;
 }
 
 /* display method */
